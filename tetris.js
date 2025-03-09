@@ -215,7 +215,7 @@ function drawGame(){
 function drawPausedScreen(){
     context.fillStyle='#333'
     context.fillRect(0,0, canvas.width, canvas.height)
-    context.fillStyle='white'
+    context.fillStyle='yellow'
     context.font = '32px Russo One';
     context.textAlign = "center";
     context.fillText("Paused", canvas.width /2, canvas.height /2)
@@ -226,7 +226,7 @@ function drawPausedScreen(){
 function drawGameOverScreen(){
     context.fillStyle = 'rgba(30,25,25,0.075)';
     context.fillRect(0,100, canvas.width, canvas.height)
-    context.fillStyle='white'
+    context.fillStyle='yellow'
     context.font = '32px Russo One';
     context.textAlign = "center";
     context.fillText("GameOver", canvas.width /2, canvas.height /2)
@@ -238,7 +238,7 @@ function drawGameOverScreen(){
 function drawMainMenu(){
     context.fillStyle='#303040'
     context.fillRect(0,0, canvas.width, canvas.height)
-    context.fillStyle='blue'
+    context.fillStyle='yellow'
     context.font = '32px Russo One';
     context.textAlign = "center";
     context.fillText("Lets Play..", canvas.width /2, canvas.height /2)
@@ -249,7 +249,7 @@ function drawMainMenu(){
     };
     
     context.font = '18px Russo One';
-    context.fillText("Press Space to begin", canvas.width /2, canvas.height /1.8)
+    context.fillText("Press Space to begin, Enjoy Game from AbdulAziz", canvas.width /2, canvas.height /1.8)
 }
 
 function drawMatrix(matrix, offset) {
