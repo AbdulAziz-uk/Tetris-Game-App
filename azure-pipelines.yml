@@ -29,8 +29,8 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: default
-      name: win10-agent
+      name: 'Default'
+      vmImage: win10-agent
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
@@ -53,8 +53,8 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     pool:
-      vmImage: default
-      name: win10-agent
+      name: 'Default'
+      vmImage: win10-agent
     environment: 'AbdulAzizukTetrisGameApp-2849.default'
     strategy:
       runOnce:
