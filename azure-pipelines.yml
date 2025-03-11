@@ -29,7 +29,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      name: 'Default'
+      name: Default
       vmImage: 'win10-agent'
     steps:
     - task: Docker@2
@@ -53,7 +53,7 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     pool:
-      name: 'Default'
+      name: Default
       vmImage: 'win10-agent'
     environment: 'AbdulAzizukTetrisGameApp.default'
     strategy:
