@@ -16,4 +16,4 @@ spec:
         - name: tetrisgame 
           image: starcontainer.azurecr.io/tetrisgame
           ports:
-          - containerPort: 80/443
+          - containerPort: 80
