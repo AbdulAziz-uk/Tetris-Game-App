@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sehrishgame 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sehrishgame
+  template:
+    metadata:
+      labels:
+        app: sehrishgame 
+    spec:
+      containers:
+        - name: sehrishgame 
+          image: staracr.azurecr.io/sehrishgame
+          ports:
+          - containerPort: 80
