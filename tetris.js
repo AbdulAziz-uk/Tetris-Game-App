@@ -238,7 +238,7 @@ function drawGameOverScreen(){
 function drawMainMenu(){
     context.fillStyle='#303040'
     context.fillRect(0,0, canvas.width, canvas.height)
-    context.fillStyle='blue'
+    context.fillStyle='green'
     context.font = '32px Russo One';
     context.textAlign = "center";
     context.fillText("Lets Play..", canvas.width /2, canvas.height /2)
@@ -249,7 +249,7 @@ function drawMainMenu(){
     };
     
     context.font = '18px Russo One';
-    context.fillText("Press Space to begin, Enjoy Game from AbdulAziz", canvas.width /2, canvas.height /1.8)
+    context.fillText("Press Space to begin, created by AbdulAziz", canvas.width /2, canvas.height /1.8)
 }
 
 function drawMatrix(matrix, offset) {
